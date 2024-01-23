@@ -1,12 +1,12 @@
 project_name: gha-token-generator
 release:
   github:
-    owner: SuperAwesomeLTD
+    owner: superawesome-org
     name: gha-token-generator
   name_template: '{{.Tag}}'
 milestones:
 - repo:
-    owner: SuperAwesomeLTD
+    owner: superawesome-org
     name: gha-token-generator
   name_template: '{{ .Tag }}'
 scoop:

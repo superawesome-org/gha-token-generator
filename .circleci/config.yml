@@ -22,7 +22,7 @@ commands:
           condition: <<parameters.dry-run>>
           steps:
             - run: |
-                export GITHUB_TOKEN=$(./bin/token-generator -pem-key=${SA_RELEASE_BOT_GITHUB_PEM} -org-name=SuperAwesomeLTD -app-id=${SA_RELEASE_BOT_APP_ID})
+                export GITHUB_TOKEN=$(./bin/token-generator -pem-key=${GHA_TOKEN_GENERATOR_READ_WRITE_APP_PEM} -org-name=superawesome-org -app-id=${GHA_TOKEN_GENERATOR_READ_WRITE_APP_ID})
                 make release
 
 jobs:
